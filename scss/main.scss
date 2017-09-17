@@ -1,0 +1,101 @@
+html, body{
+    background-color: #6f8fa6;
+    font-family: 'Lato', sans-serif;
+
+    
+    #container{
+        width: 800px;
+        background-color: #c3cfdf;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        h1{
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        form{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 20px;
+            
+            
+            label{
+                font-size: 20px;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+            
+            input{
+                height: 40px;
+                padding-left: 10px;
+            }
+            
+            button{
+                border: none;
+                background-color: #531b6f;
+                color: #ffffff;
+                cursor: pointer;
+                
+            }
+        }
+        
+        ul{
+            list-style: none;
+            
+            .single-task{
+                margin-bottom: 15px;
+                
+                .task-entered{
+                    display: flex;
+                    
+
+                    .task-done{
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        font-size: 20px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        background-color: #ffffff;
+                        color: #000000;
+                        border-radius: 5px;
+                        
+                        &.task-executed{
+                            background-color: green;
+                            color: #ffffff;
+                        }
+                    }
+                    
+                    
+
+                    .task-submitted{
+                        width: 300px;
+                        background-color: #ffffff; 
+                        height: 40px;
+                        font-size: 20px;
+                        line-height: 40px;
+                        padding-left: 5px;
+                        border-radius: 5px;
+                    }
+
+                    .task-delete{
+                        width: 40px;
+                        height: 40px;
+                        border: none; 
+                        font-size: 20px;
+                        margin-left: 5px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+
+    }
+}
